@@ -10,7 +10,7 @@ var Ajax = {
 				}
 			}
 		};
-		XR.send(null)
+		XR.send(null);
 	}, 
 	post : function(url, fn) {
 		XR.open("POST", url, true);
@@ -23,7 +23,7 @@ var Ajax = {
 				}
 			}
 		};
-		XR.send(null)
+		XR.send(null);
 	},
 	put : function(url, fn) {
 		XR.open("PUT", url, true);
@@ -36,9 +36,9 @@ var Ajax = {
 				}
 			}
 		};
-		XR.send(null)
+		XR.send(null);
 	},
-	delete : function(url, fn) {
+	del : function(url, fn) {
 		XR.open("DELETE", url, true);
 		XR.onreadystatechange = function() {
 			if (XR.readyState == 4) {
@@ -49,7 +49,7 @@ var Ajax = {
 				}
 			}
 		};
-		XR.send(null)
+		XR.send(null);
 	}
 };
 var XR = false;
